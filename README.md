@@ -28,22 +28,22 @@ organizado em um **monolito modular**:
 
 ```
 FCG/
-├── FGC.API/
+├── FCG.API/
 │   ├── Domain/
-│   │   ├── SharedKernel/        (UsuarioId, DomainException)
-│   │   ├── Identidade/          (Usuario, IUsuarioRepositorio)
-│   │   ├── Catalogo/            (Jogo, Promocao, IJogoRepositorio)
-│   │   └── Biblioteca/          (Biblioteca, IBibliotecaRepositorio)
+│   │   ├── SharedKernel/      (UsuarioId, DomainException)
+│   │   ├── Identidade/        (Usuario, IUsuarioRepositorio)
+│   │   ├── Catalogo/          (Jogo, Promocao, IJogoRepositorio)
+│   │   └── Biblioteca/        (Biblioteca, IBibliotecaRepositorio)
 │   ├── Infraestrutura/
-│   │   ├── Persistencia/        (FGCDbContext, Repositórios)
-│   │   └── Servicos/            (JwtServico, PasswordHasherServico)
-│   ├── Controllers/             (UsuarioController, AuthController, JogoController, BibliotecaController)
-│   ├── Middlewares/             (ErrorHandlingMiddleware, LoggingMiddleware)
-│   └── Logs/                    (Arquivos de log gerados pelo Serilog)
+│   │   ├── Persistencia/      (FGCDbContext, Repositórios)
+│   │   └── Servicos/          (JwtServico, PasswordHasherServico)
+│   ├── Controllers/           (UsuarioController, AuthController, JogoController, BibliotecaController)
+│   ├── Middlewares/           (ErrorHandlingMiddleware, LoggingMiddleware)
+│   └── Logs/                  (Arquivos de log gerados pelo Serilog)
 └── FCG.Tests/
-    ├── Identidade/              (TesteUsuario.cs)
-    ├── Catalogo/                (TesteJogo.cs, TestePromocao.cs)
-    └── Biblioteca/              (TesteBiblioteca.cs)
+    ├── Identidade/            (TesteUsuario.cs)
+    ├── Catalogo/              (TesteJogo.cs, TestePromocao.cs)
+    └── Biblioteca/            (TesteBiblioteca.cs)
 ```
 
 ---
@@ -64,7 +64,7 @@ dotnet tool install --global dotnet-ef
 
 **1. Clone o repositório**
 ```bash
-git clone {url_do_repositorio}
+git clone https://github.com/Ellenith/fiap-fcg-api-fase01
 cd FCG
 ```
 
@@ -75,7 +75,7 @@ dotnet restore
 
 **3. Aplique as migrations e crie o banco**
 ```bash
-dotnet ef database update --project FGC.API
+dotnet ef database update --project FCG.API
 ```
 
 O arquivo `fcg.db` será criado automaticamente na pasta `FGC.API/`.
@@ -105,7 +105,7 @@ Test summary: total: 59; failed: 0; succeeded: 59
 
 ## Variáveis de configuração
 
-Todas as configurações ficam em `FGC.API/appsettings.json`:
+Todas as configurações ficam em `FCG.API/appsettings.json`:
 
 ```json
 {
@@ -264,7 +264,7 @@ Ao informar datas na criação de promoções, use o horário de Brasília:
 
 ## Logs
 
-Os logs são gerados automaticamente na pasta `FGC.API/Logs/`
+Os logs são gerados automaticamente na pasta `FCG.API/Logs/`
 com rotação diária. Cada arquivo segue o padrão:
 
 fcg-log-YYYYMMDD.txt
