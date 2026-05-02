@@ -78,11 +78,11 @@ dotnet restore
 dotnet ef database update --project FCG.API
 ```
 
-O arquivo `fcg.db` será criado automaticamente na pasta `FGC.API/`.
+O arquivo `fcg.db` será criado automaticamente na pasta `FCG.API/`.
 
 **4. Rode a API**
 ```bash
-dotnet run --project FGC.API
+dotnet run --project FCG.API
 ```
 
 **5. Acesse o Swagger**
@@ -257,7 +257,7 @@ automaticamente para o **horário de Brasília (UTC-3)**.
 
 Ao informar datas na criação de promoções, use o horário de Brasília:
 
-"inicio": "2026-05-01T10:00:00"  → salvo como 2026-05-01T13:00:00Z
+"inicio": "2026-05-01T10:00:00"  → salvo como 2026-05-01T13:00:00Z  
 "fim":    "2026-05-31T23:59:59"  → salvo como 2026-06-01T02:59:59Z
 
 ---
@@ -271,8 +271,8 @@ fcg-log-YYYYMMDD.txt
 
 Exemplo de entrada no log:
 
-2026-04-29 10:00:00 [INF] Request iniciado: POST /usuarios
-2026-04-29 10:00:00 [INF] Request concluído: POST /usuarios → 201 em 45ms
+2026-04-29 10:00:00 [INF] Request iniciado: POST /usuarios  
+2026-04-29 10:00:00 [INF] Request concluído: POST /usuarios → 201 em 45ms  
 2026-04-29 10:00:01 [ERR] Erro não tratado: E-mail já cadastrado.
 
 ---
