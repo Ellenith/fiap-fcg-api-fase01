@@ -1,0 +1,37 @@
+{
+  "nome": "Lucas Pereira",
+  "email": "lucas.pereira@fiap.com.br",
+  "senha": "Senh@123"
+}
+
+{
+  "nome": "Ze Maneh",
+  "email": "ze.maneh@fiap.com.br",
+  "senha": "Seila@123"
+}
+{
+  "nome": "Maria Santos",
+  "email": "maria@fiap.com.br",
+  "senha": "Senha@123"
+}
+
+{
+  "titulo": "Minecraft",
+  "descricao": "Jogo de construção e sobrevivência.",
+  "preco": 99.90
+}
+{
+  "titulo": "Pragmata",
+  "descricao": "Jogo de ação, tiro e puzzle",
+  "preco": 299.90
+}
+{
+  "titulo": "ARC Raiders",
+  "descricao": "Jogo de ação, tiro, online",
+  "preco": 171.00
+}
+{
+  "titulo": "Resident Evil Requiem",
+  "descricao": "Jogo de terror e ação",
+  "preco": 299.00
+}

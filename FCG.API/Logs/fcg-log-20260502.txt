@@ -1,0 +1,316 @@
+2026-05-02 00:38:46 [INF] Application is shutting down...
+2026-05-02 10:37:35 [INF] User profile is available. Using 'C:\Users\Ixtli\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-02 10:37:35 [INF] Now listening on: http://localhost:5073
+2026-05-02 10:37:35 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-02 10:37:35 [INF] Hosting environment: Development
+2026-05-02 10:37:35 [INF] Content root path: C:\Users\Ixtli\OneDrive\Documentos\Cursos\Pos-Graduacao FIAP\Arquitetura e Desenvolvimento .NET\Projeto - Etapa 1\FGC\FCG.API
+2026-05-02 10:37:40 [INF] Request starting HTTP/1.1 GET http://localhost:5073/swagger/index.html - null null
+2026-05-02 10:37:40 [INF] Request finished HTTP/1.1 GET http://localhost:5073/swagger/index.html - 200 null text/html;charset=utf-8 96.1261ms
+2026-05-02 10:37:41 [INF] Request starting HTTP/1.1 GET http://localhost:5073/swagger/index.css - null null
+2026-05-02 10:37:41 [INF] Request starting HTTP/1.1 GET http://localhost:5073/swagger/swagger-ui.css - null null
+2026-05-02 10:37:41 [INF] Request starting HTTP/1.1 GET http://localhost:5073/swagger/index.js - null null
+2026-05-02 10:37:41 [INF] Request finished HTTP/1.1 GET http://localhost:5073/swagger/index.js - 200 null application/javascript;charset=utf-8 7.7694ms
+2026-05-02 10:37:41 [INF] Sending file. Request path: '/index.css'. Physical path: 'N/A'
+2026-05-02 10:37:41 [INF] Request finished HTTP/1.1 GET http://localhost:5073/swagger/index.css - 200 202 text/css 20.891ms
+2026-05-02 10:37:41 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2026-05-02 10:37:41 [INF] Request finished HTTP/1.1 GET http://localhost:5073/swagger/swagger-ui.css - 200 152034 text/css 25.3605ms
+2026-05-02 10:37:41 [INF] Request starting HTTP/1.1 GET http://localhost:5073/swagger/v1/swagger.json - null null
+2026-05-02 10:37:41 [INF] Request finished HTTP/1.1 GET http://localhost:5073/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 70.9035ms
+2026-05-02 10:37:42 [INF] Request starting HTTP/1.1 GET http://localhost:5073/swagger/index.html - null null
+2026-05-02 10:37:42 [INF] Request finished HTTP/1.1 GET http://localhost:5073/swagger/index.html - 200 null text/html;charset=utf-8 2.2021ms
+2026-05-02 10:37:42 [INF] Request starting HTTP/1.1 GET http://localhost:5073/swagger/index.js - null null
+2026-05-02 10:37:42 [INF] Request finished HTTP/1.1 GET http://localhost:5073/swagger/index.js - 200 null application/javascript;charset=utf-8 23.9486ms
+2026-05-02 10:37:42 [INF] Request starting HTTP/1.1 GET http://localhost:5073/swagger/v1/swagger.json - null null
+2026-05-02 10:37:42 [INF] Request finished HTTP/1.1 GET http://localhost:5073/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 5.8003ms
+2026-05-02 10:38:41 [INF] Request starting HTTP/1.1 POST http://localhost:5073/auth/login - application/json 61
+2026-05-02 10:38:41 [INF] Request iniciado: POST /auth/login
+2026-05-02 10:38:41 [WRN] Failed to determine the https port for redirect.
+2026-05-02 10:38:41 [INF] Executing endpoint 'FCG.API.Controllers.AuthController.Login (FCG.API)'
+2026-05-02 10:38:41 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(FCG.API.Controllers.LoginRequest) on controller FCG.API.Controllers.AuthController (FCG.API).
+2026-05-02 10:38:42 [INF] Executed DbCommand (10ms) [Parameters=[@__ToLowerInvariant_0='?' (Size = 20)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."CreatedAt", "u"."Email", "u"."Name", "u"."PasswordHash", "u"."Role"
+FROM "Usuarios" AS "u"
+WHERE "u"."Email" = @__ToLowerInvariant_0
+LIMIT 1
+2026-05-02 10:38:42 [INF] Executing OkObjectResult, writing value of type 'FCG.API.Controllers.LoginResponse'.
+2026-05-02 10:38:42 [INF] Executed action FCG.API.Controllers.AuthController.Login (FCG.API) in 930.8748ms
+2026-05-02 10:38:42 [INF] Executed endpoint 'FCG.API.Controllers.AuthController.Login (FCG.API)'
+2026-05-02 10:38:42 [INF] Request concluído: POST /auth/login → 200 em 1051ms
+2026-05-02 10:38:42 [INF] Request finished HTTP/1.1 POST http://localhost:5073/auth/login - 200 null application/json; charset=utf-8 1059.2234ms
+2026-05-02 10:39:02 [INF] Request starting HTTP/1.1 GET http://localhost:5073/biblioteca - null null
+2026-05-02 10:39:02 [INF] Request iniciado: GET /biblioteca
+2026-05-02 10:39:02 [INF] Executing endpoint 'FCG.API.Controllers.BibliotecaController.ListarJogosAdquiridos (FCG.API)'
+2026-05-02 10:39:02 [INF] Route matched with {action = "ListarJogosAdquiridos", controller = "Biblioteca"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ListarJogosAdquiridos() on controller FCG.API.Controllers.BibliotecaController (FCG.API).
+2026-05-02 10:39:02 [INF] Executed DbCommand (0ms) [Parameters=[@__usuarioId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT "b"."Id", "b"."AdquiridoEm", "b"."JogoId", "b"."PrecoPago", "b"."UsuarioId", "j"."Id", "j"."CriadoEm", "j"."Descricao", "j"."Preco", "j"."Titulo"
+FROM "Biblioteca" AS "b"
+INNER JOIN "Jogos" AS "j" ON "b"."JogoId" = "j"."Id"
+WHERE "b"."UsuarioId" = @__usuarioId_0
+2026-05-02 10:39:02 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+ListSelectIterator`2[[FCG.API.Domain.Biblioteca.Biblioteca, FCG.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[FCG.API.Controllers.BibliotecaResponse, FCG.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-02 10:39:02 [INF] Executed action FCG.API.Controllers.BibliotecaController.ListarJogosAdquiridos (FCG.API) in 58.105ms
+2026-05-02 10:39:02 [INF] Executed endpoint 'FCG.API.Controllers.BibliotecaController.ListarJogosAdquiridos (FCG.API)'
+2026-05-02 10:39:02 [INF] Request concluído: GET /biblioteca → 200 em 95ms
+2026-05-02 10:39:02 [INF] Request finished HTTP/1.1 GET http://localhost:5073/biblioteca - 200 null application/json; charset=utf-8 98.928ms
+2026-05-02 10:39:17 [INF] Request starting HTTP/1.1 GET http://localhost:5073/jogos - null null
+2026-05-02 10:39:17 [INF] Request iniciado: GET /jogos
+2026-05-02 10:39:17 [INF] Executing endpoint 'FCG.API.Controllers.JogoController.ListarTodos (FCG.API)'
+2026-05-02 10:39:17 [INF] Route matched with {action = "ListarTodos", controller = "Jogo"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ListarTodos() on controller FCG.API.Controllers.JogoController (FCG.API).
+2026-05-02 10:39:17 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "j"."Id", "j"."CriadoEm", "j"."Descricao", "j"."Preco", "j"."Titulo", "p"."Id", "p"."Fim", "p"."Inicio", "p"."JogoId", "p"."PercentualDesconto"
+FROM "Jogos" AS "j"
+LEFT JOIN "Promocoes" AS "p" ON "j"."Id" = "p"."JogoId"
+ORDER BY "j"."Id"
+2026-05-02 10:39:17 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+ListSelectIterator`2[[FCG.API.Domain.Catalogo.Jogo, FCG.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[FCG.API.Controllers.JogoResponse, FCG.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-02 10:39:17 [INF] Executed action FCG.API.Controllers.JogoController.ListarTodos (FCG.API) in 73.4761ms
+2026-05-02 10:39:17 [INF] Executed endpoint 'FCG.API.Controllers.JogoController.ListarTodos (FCG.API)'
+2026-05-02 10:39:17 [INF] Request concluído: GET /jogos → 200 em 82ms
+2026-05-02 10:39:17 [INF] Request finished HTTP/1.1 GET http://localhost:5073/jogos - 200 null application/json; charset=utf-8 85.6454ms
+2026-05-02 10:40:26 [INF] Request starting HTTP/1.1 POST http://localhost:5073/jogos/509718f9-c936-44da-be9e-417994486073/promocoes - application/json 98
+2026-05-02 10:40:26 [INF] Request iniciado: POST /jogos/509718f9-c936-44da-be9e-417994486073/promocoes
+2026-05-02 10:40:26 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2026-05-02 10:40:26 [INF] AuthenticationScheme: Bearer was forbidden.
+2026-05-02 10:40:26 [INF] Request concluído: POST /jogos/509718f9-c936-44da-be9e-417994486073/promocoes → 403 em 8ms
+2026-05-02 10:40:26 [INF] Request finished HTTP/1.1 POST http://localhost:5073/jogos/509718f9-c936-44da-be9e-417994486073/promocoes - 403 0 null 11.3678ms
+2026-05-02 10:42:21 [INF] Application is shutting down...
+2026-05-02 10:54:26 [INF] User profile is available. Using 'C:\Users\Ixtli\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-02 10:54:26 [INF] Now listening on: http://localhost:5073
+2026-05-02 10:54:26 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-02 10:54:26 [INF] Hosting environment: Development
+2026-05-02 10:54:26 [INF] Content root path: C:\Users\Ixtli\OneDrive\Documentos\Cursos\Pos-Graduacao FIAP\Arquitetura e Desenvolvimento .NET\Projeto - Etapa 1\FGC\FCG.API
+2026-05-02 11:02:35 [INF] Request starting HTTP/1.1 POST http://localhost:5073/jogos/509718f9-c936-44da-be9e-417994486073/promocoes - application/json 97
+2026-05-02 11:02:35 [INF] Request iniciado: POST /jogos/509718f9-c936-44da-be9e-417994486073/promocoes
+2026-05-02 11:02:35 [WRN] Failed to determine the https port for redirect.
+2026-05-02 11:02:35 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2026-05-02 11:02:35 [INF] AuthenticationScheme: Bearer was forbidden.
+2026-05-02 11:02:35 [INF] Request concluído: POST /jogos/509718f9-c936-44da-be9e-417994486073/promocoes → 403 em 67ms
+2026-05-02 11:02:35 [INF] Request finished HTTP/1.1 POST http://localhost:5073/jogos/509718f9-c936-44da-be9e-417994486073/promocoes - 403 0 null 94.9951ms
+2026-05-02 11:03:33 [INF] Request starting HTTP/1.1 POST http://localhost:5073/auth/login - application/json 65
+2026-05-02 11:03:33 [INF] Request iniciado: POST /auth/login
+2026-05-02 11:03:33 [INF] Executing endpoint 'FCG.API.Controllers.AuthController.Login (FCG.API)'
+2026-05-02 11:03:33 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(FCG.API.Controllers.LoginRequest) on controller FCG.API.Controllers.AuthController (FCG.API).
+2026-05-02 11:03:34 [INF] Executed DbCommand (9ms) [Parameters=[@__ToLowerInvariant_0='?' (Size = 25)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."CreatedAt", "u"."Email", "u"."Name", "u"."PasswordHash", "u"."Role"
+FROM "Usuarios" AS "u"
+WHERE "u"."Email" = @__ToLowerInvariant_0
+LIMIT 1
+2026-05-02 11:03:34 [INF] Executing OkObjectResult, writing value of type 'FCG.API.Controllers.LoginResponse'.
+2026-05-02 11:03:34 [INF] Executed action FCG.API.Controllers.AuthController.Login (FCG.API) in 778.1394ms
+2026-05-02 11:03:34 [INF] Executed endpoint 'FCG.API.Controllers.AuthController.Login (FCG.API)'
+2026-05-02 11:03:34 [INF] Request concluído: POST /auth/login → 200 em 803ms
+2026-05-02 11:03:34 [INF] Request finished HTTP/1.1 POST http://localhost:5073/auth/login - 200 null application/json; charset=utf-8 811.5512ms
+2026-05-02 11:03:59 [INF] Request starting HTTP/1.1 GET http://localhost:5073/biblioteca - null null
+2026-05-02 11:03:59 [INF] Request iniciado: GET /biblioteca
+2026-05-02 11:03:59 [INF] Executing endpoint 'FCG.API.Controllers.BibliotecaController.ListarJogosAdquiridos (FCG.API)'
+2026-05-02 11:03:59 [INF] Route matched with {action = "ListarJogosAdquiridos", controller = "Biblioteca"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ListarJogosAdquiridos() on controller FCG.API.Controllers.BibliotecaController (FCG.API).
+2026-05-02 11:03:59 [INF] Executed DbCommand (0ms) [Parameters=[@__usuarioId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT "b"."Id", "b"."AdquiridoEm", "b"."JogoId", "b"."PrecoPago", "b"."UsuarioId", "j"."Id", "j"."CriadoEm", "j"."Descricao", "j"."Preco", "j"."Titulo"
+FROM "Biblioteca" AS "b"
+INNER JOIN "Jogos" AS "j" ON "b"."JogoId" = "j"."Id"
+WHERE "b"."UsuarioId" = @__usuarioId_0
+2026-05-02 11:03:59 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+ListSelectIterator`2[[FCG.API.Domain.Biblioteca.Biblioteca, FCG.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[FCG.API.Controllers.BibliotecaResponse, FCG.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-02 11:03:59 [INF] Executed action FCG.API.Controllers.BibliotecaController.ListarJogosAdquiridos (FCG.API) in 64.7374ms
+2026-05-02 11:03:59 [INF] Executed endpoint 'FCG.API.Controllers.BibliotecaController.ListarJogosAdquiridos (FCG.API)'
+2026-05-02 11:03:59 [INF] Request concluído: GET /biblioteca → 200 em 75ms
+2026-05-02 11:03:59 [INF] Request finished HTTP/1.1 GET http://localhost:5073/biblioteca - 200 null application/json; charset=utf-8 82.9907ms
+2026-05-02 11:04:05 [INF] Request starting HTTP/1.1 GET http://localhost:5073/biblioteca - null null
+2026-05-02 11:04:05 [INF] Request iniciado: GET /biblioteca
+2026-05-02 11:04:05 [INF] Executing endpoint 'FCG.API.Controllers.BibliotecaController.ListarJogosAdquiridos (FCG.API)'
+2026-05-02 11:04:05 [INF] Route matched with {action = "ListarJogosAdquiridos", controller = "Biblioteca"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ListarJogosAdquiridos() on controller FCG.API.Controllers.BibliotecaController (FCG.API).
+2026-05-02 11:04:05 [INF] Executed DbCommand (0ms) [Parameters=[@__usuarioId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT "b"."Id", "b"."AdquiridoEm", "b"."JogoId", "b"."PrecoPago", "b"."UsuarioId", "j"."Id", "j"."CriadoEm", "j"."Descricao", "j"."Preco", "j"."Titulo"
+FROM "Biblioteca" AS "b"
+INNER JOIN "Jogos" AS "j" ON "b"."JogoId" = "j"."Id"
+WHERE "b"."UsuarioId" = @__usuarioId_0
+2026-05-02 11:04:05 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+ListSelectIterator`2[[FCG.API.Domain.Biblioteca.Biblioteca, FCG.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[FCG.API.Controllers.BibliotecaResponse, FCG.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-02 11:04:05 [INF] Executed action FCG.API.Controllers.BibliotecaController.ListarJogosAdquiridos (FCG.API) in 44.8204ms
+2026-05-02 11:04:05 [INF] Executed endpoint 'FCG.API.Controllers.BibliotecaController.ListarJogosAdquiridos (FCG.API)'
+2026-05-02 11:04:05 [INF] Request concluído: GET /biblioteca → 200 em 52ms
+2026-05-02 11:04:05 [INF] Request finished HTTP/1.1 GET http://localhost:5073/biblioteca - 200 null application/json; charset=utf-8 56.243ms
+2026-05-02 11:04:21 [INF] Request starting HTTP/1.1 GET http://localhost:5073/jogos - null null
+2026-05-02 11:04:21 [INF] Request iniciado: GET /jogos
+2026-05-02 11:04:21 [INF] Executing endpoint 'FCG.API.Controllers.JogoController.ListarTodos (FCG.API)'
+2026-05-02 11:04:21 [INF] Route matched with {action = "ListarTodos", controller = "Jogo"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ListarTodos() on controller FCG.API.Controllers.JogoController (FCG.API).
+2026-05-02 11:04:21 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "j"."Id", "j"."CriadoEm", "j"."Descricao", "j"."Preco", "j"."Titulo", "p"."Id", "p"."Fim", "p"."Inicio", "p"."JogoId", "p"."PercentualDesconto"
+FROM "Jogos" AS "j"
+LEFT JOIN "Promocoes" AS "p" ON "j"."Id" = "p"."JogoId"
+ORDER BY "j"."Id"
+2026-05-02 11:04:21 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+ListSelectIterator`2[[FCG.API.Domain.Catalogo.Jogo, FCG.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[FCG.API.Controllers.JogoResponse, FCG.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-02 11:04:21 [INF] Executed action FCG.API.Controllers.JogoController.ListarTodos (FCG.API) in 39.915ms
+2026-05-02 11:04:21 [INF] Executed endpoint 'FCG.API.Controllers.JogoController.ListarTodos (FCG.API)'
+2026-05-02 11:04:21 [INF] Request concluído: GET /jogos → 200 em 47ms
+2026-05-02 11:04:21 [INF] Request finished HTTP/1.1 GET http://localhost:5073/jogos - 200 null application/json; charset=utf-8 50.8103ms
+2026-05-02 11:05:11 [INF] Request starting HTTP/1.1 POST http://localhost:5073/jogos/509718f9-c936-44da-be9e-417994486073/promocoes - application/json 97
+2026-05-02 11:05:11 [INF] Request iniciado: POST /jogos/509718f9-c936-44da-be9e-417994486073/promocoes
+2026-05-02 11:05:11 [INF] Executing endpoint 'FCG.API.Controllers.JogoController.CriarPromocao (FCG.API)'
+2026-05-02 11:05:11 [INF] Route matched with {action = "CriarPromocao", controller = "Jogo"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CriarPromocao(System.Guid, FCG.API.Controllers.CriarPromocaoRequest) on controller FCG.API.Controllers.JogoController (FCG.API).
+2026-05-02 11:05:11 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT "j0"."Id", "j0"."CriadoEm", "j0"."Descricao", "j0"."Preco", "j0"."Titulo", "p"."Id", "p"."Fim", "p"."Inicio", "p"."JogoId", "p"."PercentualDesconto"
+FROM (
+    SELECT "j"."Id", "j"."CriadoEm", "j"."Descricao", "j"."Preco", "j"."Titulo"
+    FROM "Jogos" AS "j"
+    WHERE "j"."Id" = @__id_0
+    LIMIT 1
+) AS "j0"
+LEFT JOIN "Promocoes" AS "p" ON "j0"."Id" = "p"."JogoId"
+ORDER BY "j0"."Id"
+2026-05-02 11:05:11 [INF] Executed DbCommand (5ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime), @p2='?' (DbType = DateTime), @p3='?' (DbType = Guid), @p4='?' (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Promocoes" ("Id", "Fim", "Inicio", "JogoId", "PercentualDesconto")
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2026-05-02 11:05:11 [INF] Executing CreatedAtActionResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[<>f__AnonymousType2`5[[System.Guid, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Guid, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Decimal, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.DateTime, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.DateTime, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], FCG.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-02 11:05:11 [INF] Executed action FCG.API.Controllers.JogoController.CriarPromocao (FCG.API) in 142.7636ms
+2026-05-02 11:05:11 [INF] Executed endpoint 'FCG.API.Controllers.JogoController.CriarPromocao (FCG.API)'
+2026-05-02 11:05:11 [INF] Request concluído: POST /jogos/509718f9-c936-44da-be9e-417994486073/promocoes → 201 em 154ms
+2026-05-02 11:05:11 [INF] Request finished HTTP/1.1 POST http://localhost:5073/jogos/509718f9-c936-44da-be9e-417994486073/promocoes - 201 null application/json; charset=utf-8 158.0988ms
+2026-05-02 11:05:21 [INF] Request starting HTTP/1.1 GET http://localhost:5073/jogos - null null
+2026-05-02 11:05:21 [INF] Request iniciado: GET /jogos
+2026-05-02 11:05:21 [INF] Executing endpoint 'FCG.API.Controllers.JogoController.ListarTodos (FCG.API)'
+2026-05-02 11:05:21 [INF] Route matched with {action = "ListarTodos", controller = "Jogo"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ListarTodos() on controller FCG.API.Controllers.JogoController (FCG.API).
+2026-05-02 11:05:21 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "j"."Id", "j"."CriadoEm", "j"."Descricao", "j"."Preco", "j"."Titulo", "p"."Id", "p"."Fim", "p"."Inicio", "p"."JogoId", "p"."PercentualDesconto"
+FROM "Jogos" AS "j"
+LEFT JOIN "Promocoes" AS "p" ON "j"."Id" = "p"."JogoId"
+ORDER BY "j"."Id"
+2026-05-02 11:05:21 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+ListSelectIterator`2[[FCG.API.Domain.Catalogo.Jogo, FCG.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[FCG.API.Controllers.JogoResponse, FCG.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-02 11:05:21 [INF] Executed action FCG.API.Controllers.JogoController.ListarTodos (FCG.API) in 4.0125ms
+2026-05-02 11:05:21 [INF] Executed endpoint 'FCG.API.Controllers.JogoController.ListarTodos (FCG.API)'
+2026-05-02 11:05:21 [INF] Request concluído: GET /jogos → 200 em 9ms
+2026-05-02 11:05:21 [INF] Request finished HTTP/1.1 GET http://localhost:5073/jogos - 200 null application/json; charset=utf-8 12.5095ms
+2026-05-02 11:11:07 [INF] Request starting HTTP/1.1 GET http://localhost:5073/jogos - null null
+2026-05-02 11:11:07 [INF] Request iniciado: GET /jogos
+2026-05-02 11:11:07 [INF] Executing endpoint 'FCG.API.Controllers.JogoController.ListarTodos (FCG.API)'
+2026-05-02 11:11:07 [INF] Route matched with {action = "ListarTodos", controller = "Jogo"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ListarTodos() on controller FCG.API.Controllers.JogoController (FCG.API).
+2026-05-02 11:11:07 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "j"."Id", "j"."CriadoEm", "j"."Descricao", "j"."Preco", "j"."Titulo", "p"."Id", "p"."Fim", "p"."Inicio", "p"."JogoId", "p"."PercentualDesconto"
+FROM "Jogos" AS "j"
+LEFT JOIN "Promocoes" AS "p" ON "j"."Id" = "p"."JogoId"
+ORDER BY "j"."Id"
+2026-05-02 11:11:07 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+ListSelectIterator`2[[FCG.API.Domain.Catalogo.Jogo, FCG.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[FCG.API.Controllers.JogoResponse, FCG.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-02 11:11:07 [INF] Executed action FCG.API.Controllers.JogoController.ListarTodos (FCG.API) in 6.6111ms
+2026-05-02 11:11:07 [INF] Executed endpoint 'FCG.API.Controllers.JogoController.ListarTodos (FCG.API)'
+2026-05-02 11:11:07 [INF] Request concluído: GET /jogos → 200 em 12ms
+2026-05-02 11:11:07 [INF] Request finished HTTP/1.1 GET http://localhost:5073/jogos - 200 null application/json; charset=utf-8 16.3832ms
+2026-05-02 11:12:15 [INF] Application is shutting down...
+2026-05-02 11:13:44 [INF] User profile is available. Using 'C:\Users\Ixtli\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-02 11:13:44 [INF] Now listening on: http://localhost:5073
+2026-05-02 11:13:44 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-02 11:13:44 [INF] Hosting environment: Development
+2026-05-02 11:13:44 [INF] Content root path: C:\Users\Ixtli\OneDrive\Documentos\Cursos\Pos-Graduacao FIAP\Arquitetura e Desenvolvimento .NET\Projeto - Etapa 1\FGC\FCG.API
+2026-05-02 11:13:47 [INF] Request starting HTTP/1.1 GET http://localhost:5073/swagger/index.html - null null
+2026-05-02 11:13:48 [INF] Request finished HTTP/1.1 GET http://localhost:5073/swagger/index.html - 200 null text/html;charset=utf-8 86.888ms
+2026-05-02 11:13:48 [INF] Request starting HTTP/1.1 GET http://localhost:5073/swagger/index.js - null null
+2026-05-02 11:13:48 [INF] Request finished HTTP/1.1 GET http://localhost:5073/swagger/index.js - 200 null application/javascript;charset=utf-8 4.9319ms
+2026-05-02 11:13:48 [INF] Request starting HTTP/1.1 GET http://localhost:5073/swagger/v1/swagger.json - null null
+2026-05-02 11:13:48 [INF] Request finished HTTP/1.1 GET http://localhost:5073/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 72.0663ms
+2026-05-02 11:13:52 [INF] Request starting HTTP/1.1 GET http://localhost:5073/jogos/promocoes - null null
+2026-05-02 11:13:52 [INF] Request iniciado: GET /jogos/promocoes
+2026-05-02 11:13:52 [WRN] Failed to determine the https port for redirect.
+2026-05-02 11:13:52 [INF] Executing endpoint 'FCG.API.Controllers.JogoController.ListarPromocoesAtivas (FCG.API)'
+2026-05-02 11:13:52 [INF] Route matched with {action = "ListarPromocoesAtivas", controller = "Jogo"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ListarPromocoesAtivas() on controller FCG.API.Controllers.JogoController (FCG.API).
+2026-05-02 11:13:53 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "j"."Id", "j"."CriadoEm", "j"."Descricao", "j"."Preco", "j"."Titulo", "p"."Id", "p"."Fim", "p"."Inicio", "p"."JogoId", "p"."PercentualDesconto"
+FROM "Jogos" AS "j"
+LEFT JOIN "Promocoes" AS "p" ON "j"."Id" = "p"."JogoId"
+ORDER BY "j"."Id"
+2026-05-02 11:13:53 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+ListSelectIterator`2[[FCG.API.Domain.Catalogo.Jogo, FCG.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[FCG.API.Controllers.PromocaoAtivaResponse, FCG.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-02 11:13:53 [INF] Executed action FCG.API.Controllers.JogoController.ListarPromocoesAtivas (FCG.API) in 710.8415ms
+2026-05-02 11:13:53 [INF] Executed endpoint 'FCG.API.Controllers.JogoController.ListarPromocoesAtivas (FCG.API)'
+2026-05-02 11:13:53 [INF] Request concluído: GET /jogos/promocoes → 200 em 749ms
+2026-05-02 11:13:53 [INF] Request finished HTTP/1.1 GET http://localhost:5073/jogos/promocoes - 200 null application/json; charset=utf-8 758.9099ms
+2026-05-02 11:16:45 [INF] Application is shutting down...
+2026-05-02 11:24:23 [INF] User profile is available. Using 'C:\Users\Ixtli\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-02 11:24:24 [INF] Now listening on: http://localhost:5073
+2026-05-02 11:24:24 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-02 11:24:24 [INF] Hosting environment: Development
+2026-05-02 11:24:24 [INF] Content root path: C:\Users\Ixtli\OneDrive\Documentos\Cursos\Pos-Graduacao FIAP\Arquitetura e Desenvolvimento .NET\Projeto - Etapa 1\FGC\FCG.API
+2026-05-02 11:24:27 [INF] Request starting HTTP/1.1 GET http://localhost:5073/swagger/index.html - null null
+2026-05-02 11:24:27 [INF] Request finished HTTP/1.1 GET http://localhost:5073/swagger/index.html - 200 null text/html;charset=utf-8 84.2059ms
+2026-05-02 11:24:27 [INF] Request starting HTTP/1.1 GET http://localhost:5073/swagger/index.js - null null
+2026-05-02 11:24:27 [INF] Request finished HTTP/1.1 GET http://localhost:5073/swagger/index.js - 200 null application/javascript;charset=utf-8 4.6872ms
+2026-05-02 11:24:27 [INF] Request starting HTTP/1.1 GET http://localhost:5073/swagger/v1/swagger.json - null null
+2026-05-02 11:24:27 [INF] Request finished HTTP/1.1 GET http://localhost:5073/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 77.9697ms
+2026-05-02 11:24:54 [INF] Request starting HTTP/1.1 GET http://localhost:5073/biblioteca - null null
+2026-05-02 11:24:54 [INF] Request iniciado: GET /biblioteca
+2026-05-02 11:24:54 [WRN] Failed to determine the https port for redirect.
+2026-05-02 11:24:54 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-05-02 11:24:54 [INF] AuthenticationScheme: Bearer was challenged.
+2026-05-02 11:24:54 [INF] Request concluído: GET /biblioteca → 401 em 27ms
+2026-05-02 11:24:54 [INF] Request finished HTTP/1.1 GET http://localhost:5073/biblioteca - 401 0 null 32.621ms
+2026-05-02 11:25:06 [INF] Request starting HTTP/1.1 GET http://localhost:5073/jogos/promocoes - null null
+2026-05-02 11:25:06 [INF] Request iniciado: GET /jogos/promocoes
+2026-05-02 11:25:06 [INF] Executing endpoint 'FCG.API.Controllers.JogoController.ListarPromocoesAtivas (FCG.API)'
+2026-05-02 11:25:06 [INF] Route matched with {action = "ListarPromocoesAtivas", controller = "Jogo"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ListarPromocoesAtivas() on controller FCG.API.Controllers.JogoController (FCG.API).
+2026-05-02 11:25:07 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "j"."Id", "j"."CriadoEm", "j"."Descricao", "j"."Preco", "j"."Titulo", "p"."Id", "p"."Fim", "p"."Inicio", "p"."JogoId", "p"."PercentualDesconto"
+FROM "Jogos" AS "j"
+LEFT JOIN "Promocoes" AS "p" ON "j"."Id" = "p"."JogoId"
+ORDER BY "j"."Id"
+2026-05-02 11:25:07 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+ListSelectIterator`2[[FCG.API.Domain.Catalogo.Jogo, FCG.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[FCG.API.Controllers.PromocaoAtivaResponse, FCG.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-02 11:25:07 [INF] Executed action FCG.API.Controllers.JogoController.ListarPromocoesAtivas (FCG.API) in 676.157ms
+2026-05-02 11:25:07 [INF] Executed endpoint 'FCG.API.Controllers.JogoController.ListarPromocoesAtivas (FCG.API)'
+2026-05-02 11:25:07 [INF] Request concluído: GET /jogos/promocoes → 200 em 698ms
+2026-05-02 11:25:07 [INF] Request finished HTTP/1.1 GET http://localhost:5073/jogos/promocoes - 200 null application/json; charset=utf-8 705.6496ms
+2026-05-02 13:26:21 [INF] Application is shutting down...
+2026-05-02 13:27:37 [INF] User profile is available. Using 'C:\Users\Ixtli\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-02 13:27:37 [INF] Now listening on: http://localhost:5073
+2026-05-02 13:27:37 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-02 13:27:37 [INF] Hosting environment: Development
+2026-05-02 13:27:37 [INF] Content root path: C:\Users\Ixtli\OneDrive\Documentos\Cursos\Pos-Graduacao FIAP\Arquitetura e Desenvolvimento .NET\Projeto - Etapa 1\FCG\FCG.API
+2026-05-02 13:27:45 [INF] Request starting HTTP/1.1 GET http://localhost:5073/swagger/index.html - null null
+2026-05-02 13:27:45 [INF] Request finished HTTP/1.1 GET http://localhost:5073/swagger/index.html - 200 null text/html;charset=utf-8 77.2755ms
+2026-05-02 13:27:45 [INF] Request starting HTTP/1.1 GET http://localhost:5073/swagger/index.js - null null
+2026-05-02 13:27:45 [INF] Request starting HTTP/1.1 GET http://localhost:5073/swagger/swagger-ui.css - null null
+2026-05-02 13:27:45 [INF] Request starting HTTP/1.1 GET http://localhost:5073/swagger/index.css - null null
+2026-05-02 13:27:45 [INF] Request finished HTTP/1.1 GET http://localhost:5073/swagger/index.js - 200 null application/javascript;charset=utf-8 4.3475ms
+2026-05-02 13:27:45 [INF] Sending file. Request path: '/index.css'. Physical path: 'N/A'
+2026-05-02 13:27:45 [INF] Request finished HTTP/1.1 GET http://localhost:5073/swagger/index.css - 200 202 text/css 14.4805ms
+2026-05-02 13:27:45 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2026-05-02 13:27:45 [INF] Request finished HTTP/1.1 GET http://localhost:5073/swagger/swagger-ui.css - 200 152034 text/css 18.7407ms
+2026-05-02 13:27:45 [INF] Request starting HTTP/1.1 GET http://localhost:5073/swagger/v1/swagger.json - null null
+2026-05-02 13:27:45 [INF] Request finished HTTP/1.1 GET http://localhost:5073/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 70.6721ms
+2026-05-02 13:28:06 [INF] Request starting HTTP/1.1 GET http://localhost:5073/jogos/promocoes - null null
+2026-05-02 13:28:06 [INF] Request iniciado: GET /jogos/promocoes
+2026-05-02 13:28:06 [WRN] Failed to determine the https port for redirect.
+2026-05-02 13:28:06 [INF] Executing endpoint 'FCG.API.Controllers.JogoController.ListarPromocoesAtivas (FCG.API)'
+2026-05-02 13:28:06 [INF] Route matched with {action = "ListarPromocoesAtivas", controller = "Jogo"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ListarPromocoesAtivas() on controller FCG.API.Controllers.JogoController (FCG.API).
+2026-05-02 13:28:06 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "j"."Id", "j"."CriadoEm", "j"."Descricao", "j"."Preco", "j"."Titulo", "p"."Id", "p"."Fim", "p"."Inicio", "p"."JogoId", "p"."PercentualDesconto"
+FROM "Jogos" AS "j"
+LEFT JOIN "Promocoes" AS "p" ON "j"."Id" = "p"."JogoId"
+ORDER BY "j"."Id"
+2026-05-02 13:28:06 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+ListSelectIterator`2[[FCG.API.Domain.Catalogo.Jogo, FCG.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[FCG.API.Controllers.PromocaoAtivaResponse, FCG.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-02 13:28:06 [INF] Executed action FCG.API.Controllers.JogoController.ListarPromocoesAtivas (FCG.API) in 650.5072ms
+2026-05-02 13:28:06 [INF] Executed endpoint 'FCG.API.Controllers.JogoController.ListarPromocoesAtivas (FCG.API)'
+2026-05-02 13:28:06 [INF] Request concluído: GET /jogos/promocoes → 200 em 695ms
+2026-05-02 13:28:07 [INF] Request finished HTTP/1.1 GET http://localhost:5073/jogos/promocoes - 200 null application/json; charset=utf-8 703.9199ms
+2026-05-02 13:31:40 [INF] Application is shutting down...
+2026-05-02 14:03:44 [INF] User profile is available. Using 'C:\Users\Ixtli\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-02 14:03:44 [INF] Now listening on: http://localhost:5073
+2026-05-02 14:03:44 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-02 14:03:44 [INF] Hosting environment: Development
+2026-05-02 14:03:44 [INF] Content root path: C:\Users\Ixtli\OneDrive\Documentos\Cursos\Pos-Graduacao FIAP\Arquitetura e Desenvolvimento .NET\Projeto - Etapa 1\FCG\FCG.API
+2026-05-02 14:03:49 [INF] Request starting HTTP/1.1 GET http://localhost:5073/swagger/index.html - null null
+2026-05-02 14:03:49 [INF] Request finished HTTP/1.1 GET http://localhost:5073/swagger/index.html - 200 null text/html;charset=utf-8 79.2455ms
+2026-05-02 14:03:49 [INF] Request starting HTTP/1.1 GET http://localhost:5073/swagger/index.js - null null
+2026-05-02 14:03:49 [INF] Request finished HTTP/1.1 GET http://localhost:5073/swagger/index.js - 200 null application/javascript;charset=utf-8 4.3748ms
+2026-05-02 14:03:50 [INF] Request starting HTTP/1.1 GET http://localhost:5073/swagger/v1/swagger.json - null null
+2026-05-02 14:03:50 [INF] Request finished HTTP/1.1 GET http://localhost:5073/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 70.141ms
+2026-05-02 14:03:58 [INF] Request starting HTTP/1.1 GET http://localhost:5073/jogos/promocoes - null null
+2026-05-02 14:03:58 [INF] Request iniciado: GET /jogos/promocoes
+2026-05-02 14:03:58 [WRN] Failed to determine the https port for redirect.
+2026-05-02 14:03:58 [INF] Executing endpoint 'FCG.API.Controllers.JogoController.ListarPromocoesAtivas (FCG.API)'
+2026-05-02 14:03:58 [INF] Route matched with {action = "ListarPromocoesAtivas", controller = "Jogo"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ListarPromocoesAtivas() on controller FCG.API.Controllers.JogoController (FCG.API).
+2026-05-02 14:03:59 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "j"."Id", "j"."CriadoEm", "j"."Descricao", "j"."Preco", "j"."Titulo", "p"."Id", "p"."Fim", "p"."Inicio", "p"."JogoId", "p"."PercentualDesconto"
+FROM "Jogos" AS "j"
+LEFT JOIN "Promocoes" AS "p" ON "j"."Id" = "p"."JogoId"
+ORDER BY "j"."Id"
+2026-05-02 14:03:59 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+ListSelectIterator`2[[FCG.API.Domain.Catalogo.Jogo, FCG.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[FCG.API.Controllers.PromocaoAtivaResponse, FCG.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-02 14:03:59 [INF] Executed action FCG.API.Controllers.JogoController.ListarPromocoesAtivas (FCG.API) in 990.3882ms
+2026-05-02 14:03:59 [INF] Executed endpoint 'FCG.API.Controllers.JogoController.ListarPromocoesAtivas (FCG.API)'
+2026-05-02 14:03:59 [INF] Request concluído: GET /jogos/promocoes → 200 em 1043ms
+2026-05-02 14:03:59 [INF] Request finished HTTP/1.1 GET http://localhost:5073/jogos/promocoes - 200 null application/json; charset=utf-8 1051.7071ms
+2026-05-02 14:09:13 [INF] Application is shutting down...

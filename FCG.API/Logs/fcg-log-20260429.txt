@@ -1,0 +1,73 @@
+2026-04-29 22:52:02 [INF] User profile is available. Using 'C:\Users\Ixtli\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-29 22:52:03 [INF] Now listening on: http://localhost:5073
+2026-04-29 22:52:03 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-29 22:52:03 [INF] Hosting environment: Development
+2026-04-29 22:52:03 [INF] Content root path: C:\Users\Ixtli\OneDrive\Documentos\Cursos\Pos-Graduacao FIAP\Arquitetura e Desenvolvimento .NET\Projeto - Etapa 1\FGC\FCG.API
+2026-04-29 22:53:01 [INF] Request starting HTTP/1.1 GET http://localhost:5073/biblioteca - null null
+2026-04-29 22:53:01 [INF] Request iniciado: GET /biblioteca
+2026-04-29 22:53:01 [WRN] Failed to determine the https port for redirect.
+2026-04-29 22:53:01 [INF] Executing endpoint 'FCG.API.Controllers.BibliotecaController.ListarJogosAdquiridos (FCG.API)'
+2026-04-29 22:53:01 [INF] Route matched with {action = "ListarJogosAdquiridos", controller = "Biblioteca"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ListarJogosAdquiridos() on controller FCG.API.Controllers.BibliotecaController (FCG.API).
+2026-04-29 22:53:02 [INF] Executed DbCommand (7ms) [Parameters=[@__usuarioId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT "b"."Id", "b"."AdquiridoEm", "b"."JogoId", "b"."PrecoPago", "b"."UsuarioId"
+FROM "Biblioteca" AS "b"
+WHERE "b"."UsuarioId" = @__usuarioId_0
+2026-04-29 22:53:02 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+ListSelectIterator`2[[FCG.API.Domain.Biblioteca.Biblioteca, FCG.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[FCG.API.Controllers.BibliotecaResponse, FCG.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-04-29 22:53:02 [INF] Executed action FCG.API.Controllers.BibliotecaController.ListarJogosAdquiridos (FCG.API) in 623.1225ms
+2026-04-29 22:53:02 [INF] Executed endpoint 'FCG.API.Controllers.BibliotecaController.ListarJogosAdquiridos (FCG.API)'
+2026-04-29 22:53:02 [INF] Request concluído: GET /biblioteca → 200 em 703ms
+2026-04-29 22:53:02 [INF] Request finished HTTP/1.1 GET http://localhost:5073/biblioteca - 200 null application/json; charset=utf-8 733.7155ms
+2026-04-29 22:53:12 [INF] Request starting HTTP/1.1 GET http://localhost:5073/jogos - null null
+2026-04-29 22:53:12 [INF] Request iniciado: GET /jogos
+2026-04-29 22:53:12 [INF] Executing endpoint 'FCG.API.Controllers.JogoController.ListarTodos (FCG.API)'
+2026-04-29 22:53:12 [INF] Route matched with {action = "ListarTodos", controller = "Jogo"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ListarTodos() on controller FCG.API.Controllers.JogoController (FCG.API).
+2026-04-29 22:53:12 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "j"."Id", "j"."CriadoEm", "j"."Descricao", "j"."Preco", "j"."Titulo"
+FROM "Jogos" AS "j"
+2026-04-29 22:53:12 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+ListSelectIterator`2[[FCG.API.Domain.Catalogo.Jogo, FCG.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[FCG.API.Controllers.JogoResponse, FCG.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-04-29 22:53:12 [INF] Executed action FCG.API.Controllers.JogoController.ListarTodos (FCG.API) in 23.9158ms
+2026-04-29 22:53:12 [INF] Executed endpoint 'FCG.API.Controllers.JogoController.ListarTodos (FCG.API)'
+2026-04-29 22:53:12 [INF] Request concluído: GET /jogos → 200 em 33ms
+2026-04-29 22:53:12 [INF] Request finished HTTP/1.1 GET http://localhost:5073/jogos - 200 null application/json; charset=utf-8 38.2804ms
+2026-04-29 22:53:38 [INF] Request starting HTTP/1.1 GET http://localhost:5073/usuarios - null null
+2026-04-29 22:53:38 [INF] Request iniciado: GET /usuarios
+2026-04-29 22:53:38 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2026-04-29 22:53:38 [INF] AuthenticationScheme: Bearer was forbidden.
+2026-04-29 22:53:38 [INF] Request concluído: GET /usuarios → 403 em 6ms
+2026-04-29 22:53:38 [INF] Request finished HTTP/1.1 GET http://localhost:5073/usuarios - 403 0 null 10.3057ms
+2026-04-29 22:59:33 [INF] Request starting HTTP/1.1 GET http://localhost:5073/biblioteca - null null
+2026-04-29 22:59:33 [INF] Request iniciado: GET /biblioteca
+2026-04-29 22:59:33 [INF] Executing endpoint 'FCG.API.Controllers.BibliotecaController.ListarJogosAdquiridos (FCG.API)'
+2026-04-29 22:59:33 [INF] Route matched with {action = "ListarJogosAdquiridos", controller = "Biblioteca"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ListarJogosAdquiridos() on controller FCG.API.Controllers.BibliotecaController (FCG.API).
+2026-04-29 22:59:33 [INF] Executed DbCommand (1ms) [Parameters=[@__usuarioId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT "b"."Id", "b"."AdquiridoEm", "b"."JogoId", "b"."PrecoPago", "b"."UsuarioId"
+FROM "Biblioteca" AS "b"
+WHERE "b"."UsuarioId" = @__usuarioId_0
+2026-04-29 22:59:33 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+ListSelectIterator`2[[FCG.API.Domain.Biblioteca.Biblioteca, FCG.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[FCG.API.Controllers.BibliotecaResponse, FCG.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-04-29 22:59:33 [INF] Executed action FCG.API.Controllers.BibliotecaController.ListarJogosAdquiridos (FCG.API) in 48.8831ms
+2026-04-29 22:59:33 [INF] Executed endpoint 'FCG.API.Controllers.BibliotecaController.ListarJogosAdquiridos (FCG.API)'
+2026-04-29 22:59:33 [INF] Request concluído: GET /biblioteca → 200 em 54ms
+2026-04-29 22:59:33 [INF] Request finished HTTP/1.1 GET http://localhost:5073/biblioteca - 200 null application/json; charset=utf-8 58.3049ms
+2026-04-29 22:59:42 [INF] Application is shutting down...
+2026-04-29 22:59:48 [INF] User profile is available. Using 'C:\Users\Ixtli\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-29 22:59:48 [INF] Now listening on: http://localhost:5073
+2026-04-29 22:59:48 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-29 22:59:48 [INF] Hosting environment: Development
+2026-04-29 22:59:48 [INF] Content root path: C:\Users\Ixtli\OneDrive\Documentos\Cursos\Pos-Graduacao FIAP\Arquitetura e Desenvolvimento .NET\Projeto - Etapa 1\FGC\FCG.API
+2026-04-29 23:00:03 [INF] Request starting HTTP/1.1 GET http://localhost:5073/biblioteca - null null
+2026-04-29 23:00:03 [INF] Request iniciado: GET /biblioteca
+2026-04-29 23:00:03 [WRN] Failed to determine the https port for redirect.
+2026-04-29 23:00:03 [INF] Executing endpoint 'FCG.API.Controllers.BibliotecaController.ListarJogosAdquiridos (FCG.API)'
+2026-04-29 23:00:03 [INF] Route matched with {action = "ListarJogosAdquiridos", controller = "Biblioteca"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ListarJogosAdquiridos() on controller FCG.API.Controllers.BibliotecaController (FCG.API).
+2026-04-29 23:00:04 [INF] Executed DbCommand (8ms) [Parameters=[@__usuarioId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT "b"."Id", "b"."AdquiridoEm", "b"."JogoId", "b"."PrecoPago", "b"."UsuarioId", "j"."Id", "j"."CriadoEm", "j"."Descricao", "j"."Preco", "j"."Titulo"
+FROM "Biblioteca" AS "b"
+INNER JOIN "Jogos" AS "j" ON "b"."JogoId" = "j"."Id"
+WHERE "b"."UsuarioId" = @__usuarioId_0
+2026-04-29 23:00:04 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+ListSelectIterator`2[[FCG.API.Domain.Biblioteca.Biblioteca, FCG.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[FCG.API.Controllers.BibliotecaResponse, FCG.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-04-29 23:00:04 [INF] Executed action FCG.API.Controllers.BibliotecaController.ListarJogosAdquiridos (FCG.API) in 672.4628ms
+2026-04-29 23:00:04 [INF] Executed endpoint 'FCG.API.Controllers.BibliotecaController.ListarJogosAdquiridos (FCG.API)'
+2026-04-29 23:00:04 [INF] Request concluído: GET /biblioteca → 200 em 751ms
+2026-04-29 23:00:04 [INF] Request finished HTTP/1.1 GET http://localhost:5073/biblioteca - 200 null application/json; charset=utf-8 787.5798ms
+2026-04-29 23:33:00 [INF] Application is shutting down...
